@@ -1,0 +1,24 @@
+doctype html
+html
+	head
+		title Blog de prueba en Rails
+		meta name="keywords" content="es"
+		meta name="author" content="Andrés Tonello"
+		meta name="viewport" content="width=device-width, initial-scale=1.0"
+		= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+		= javascript_include_tag 'application', 'data-turbolinks-track' => true
+		= csrf_meta_tags
+
+		link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css"
+		script src="https://use.fontawesome.com/b1b1e544a9.js"
+		script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"
+
+	body
+		= render 'shared/header'
+
+		#content
+			p This example shows you how a basic Slim file looks like.
+
+			== yield
+
+		= render 'shared/footer'
