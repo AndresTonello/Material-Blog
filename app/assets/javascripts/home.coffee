@@ -4,6 +4,8 @@
 
 $(document).on 'ready', ->
 	$(".button-collapse").sideNav({
-		edge: 'left',
+		edge: 'right',
 		closeOnClick: false
 	})
+
+	$('.modal-trigger').leanModal()
